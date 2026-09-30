@@ -1,0 +1,18 @@
+.drag-handle {
+    cursor: grab;
+    user-select: none;
+    font-size: 1rem;
+    letter-spacing: -2px;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+#task-list .sortable-ghost {
+    opacity: 0.4;
+}
+
+#task-list .list-group-item {
+    transition: background-color 0.15s ease;
+}

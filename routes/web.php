@@ -33,7 +33,7 @@ Route::get('projects/{project}/tasks', [TaskController::class, 'index'])
     ->name('projects.tasks.index');
 Route::post('tasks', [TaskController::class, 'store'])
     ->name('tasks.store');
-Route::get('tasks/reorder', [TaskController::class, 'reorder'])
+Route::post('tasks/reorder', [TaskController::class, 'reorder'])
     ->name('tasks.reorder');
 Route::get('tasks/{task}/edit', [TaskController::class, 'edit'])
     ->name('tasks.edit');
